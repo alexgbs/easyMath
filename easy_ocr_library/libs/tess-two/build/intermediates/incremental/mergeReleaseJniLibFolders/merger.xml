@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\androidStudioProjects\Easy-Ocr-Scanner-Android-master\easy_ocr_library\libs\tess-two\libs"/></dataSet><dataSet config="release"><source path="D:\androidStudioProjects\Easy-Ocr-Scanner-Android-master\easy_ocr_library\libs\tess-two\src\release\jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="D:\ProjectEasyMath\easyMath\easy_ocr_library\libs\tess-two\libs"/></dataSet><dataSet config="release"><source path="D:\ProjectEasyMath\easyMath\easy_ocr_library\libs\tess-two\src\release\jniLibs"/></dataSet></merger>

@@ -1,3 +1,4 @@
 include ':app'
+include ':app:lib'
 include ':easy_ocr_library', ':tess-two'
 project(':tess-two').projectDir = new File('easy_ocr_library/libs/tess-two')

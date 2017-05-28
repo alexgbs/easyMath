@@ -3,8 +3,10 @@ package com.wordpress.priyankvex.easyocrscannerdemo;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -19,6 +21,8 @@ public class MainActivity extends AppCompatActivity implements EasyOcrScannerLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Log.w("MYAPPPPPPP", "no network");
 
         textView = (TextView) findViewById(R.id.textView);
 
@@ -35,6 +39,8 @@ public class MainActivity extends AppCompatActivity implements EasyOcrScannerLis
                 mEasyOcrScanner.takePicture();
             }
         });
+
+        textView.setText(MathProcessor.solveExpression("3+4*10"));
 
     }
 
