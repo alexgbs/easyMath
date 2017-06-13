@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements EasyOcrScannerLis
             }
         });
 
-        textView.setText(MathProcessor.solveExpression("3+4*10"));
+        //textView.setText(MathProcessor.solveExpression("30+40*10-20*14"));
 
     }
 
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity implements EasyOcrScannerLis
      */
     @Override
     public void onOcrScanFinished(Bitmap bitmap, String recognizedText) {
-        textView.setText(recognizedText);
+        textView.setText(MathProcessor.solveExpression(recognizedText));
         if (mProgressDialog.isShowing()){
             mProgressDialog.dismiss();
         }
